@@ -22,4 +22,4 @@ class Aluno(models.Model):
     cidade = models.ForeignKey(Cidade, on_delete=models.PROTECT)
 
     def __str__(self):
-        return f'{self.nome} ({self.cidade} - {self.cidade.estado}) - {self.email}'
+        return f'{self.nome} ({self.cidade}) - {self.email}'
